@@ -1,6 +1,4 @@
-# Next Word Prediction Using LSTM — Pure PyTorch
-
-This project has been converted from TensorFlow/Keras to **PyTorch**. It uses Shakespeare's *Hamlet* text, creates next-word training sequences, trains a two-layer LSTM, uses validation-loss early stopping, and provides a Streamlit prediction app.
+# Next Word Prediction Using LSTM
 
 ## What's included
 - `hamlet.txt` — training text
@@ -65,5 +63,3 @@ streamlit run app.py
 - Optimizer: Adam
 - Early stopping: monitors validation loss, patience 3, restores best weights
 
-## Notes
-The model must be trained before running prediction or the app. The original Keras `.h5` weights and tokenizer pickle are intentionally not included, because they are incompatible with a pure PyTorch project. The converted project retrains using the included Hamlet text.
